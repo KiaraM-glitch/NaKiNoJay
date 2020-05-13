@@ -3,6 +3,7 @@ var Wit = require("../models/script.js");
 
 
 
+// Routes
 
 module.exports = function(app) {
     app.get("/api/all", function(req, res) {
