@@ -34,7 +34,8 @@ $(document).ready(function() {
             password: password
         })
             .then(function(data) {
-                window.location.replace("/signup")
+                // window.location.replace("/signup")
+                console.log("done")
             })
         .catch(handleLoginErr);
     }
