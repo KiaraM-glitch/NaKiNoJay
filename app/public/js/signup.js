@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     // Referencing from our signup.html
     var signUpForm = $("form.signup")
     var usernameInput = $("input#username-input")
@@ -8,6 +8,7 @@ $(document).ready(function() {
     // When the Submit button is click, we validate the username and password are not blank
     signUpForm.on("submit", function(event) {
         event.preventDefault();
+
         var userData = {
             username: usernameInput.val().trim(),
             password: passwordInput.val().trim()
