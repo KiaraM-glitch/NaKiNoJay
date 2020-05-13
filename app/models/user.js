@@ -17,10 +17,15 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   // Creates our "wits" table which is where the "tweets" will be held
-  var Sequelize = require("sequelize");
   var Wit = sequelize.define("wit", {
-    author: Sequelize.STRING,
-    body: Sequelize.STRING,
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    body: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   });
 
   Wit.sync();
