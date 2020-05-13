@@ -1,23 +1,37 @@
+// DEPENDENCIES
 var express = require("express");
+var session = require("express-session");
+var passport = require("./app/config/passport");
+// =====================================
 
-var PORT = process.env.PORT || 8080;
-
+// Sets up the Express app
 var app = express();
+var PORT = process.env.PORT || 8080;
+var db = require("./app/models");
+// =====================================
 
-app.use(express.static("public"));
-
-app.use(express.urlencoded({ extended: true }));
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
+// =====================================
 
-var exphbs = require("express-handlebars");
+// Static directory
+app.use(express.static("app/public"));
+// =====================================
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
-var routes = require("./controllers/nakinojay_controller.js");
+// Routes
+require("./app/routes/api-routes.js")(app);
+// =====================================
 
-app.use(routes);
 
-app.listen(PORT, function() {
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+// Starts the server to begin Listening:
+db.sequelize.sync().then(function() {
+    app.listen(PORT, function() {
+      console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+    });
+  });
+// =====================================
