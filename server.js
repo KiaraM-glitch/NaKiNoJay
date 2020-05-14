@@ -1,13 +1,13 @@
 // DEPENDENCIES
 var express = require("express");
 var session = require("express-session");
-var passport = require("./app/config/passport");
+var passport = require("./config/passport");
 // =====================================
 
 // Sets up the Express app
-var app = express();
 var PORT = process.env.PORT || 8080;
-var db = require("./app/models");
+var db = require("./models");
+var app = express();
 // =====================================
 
 // Sets up the Express app to handle data parsing
@@ -16,7 +16,7 @@ app.use(express.json());
 // =====================================
 
 // Static directory
-app.use(express.static("app/public"));
+app.use(express.static("public"));
 // =====================================
 
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
@@ -24,7 +24,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-require("./app/routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
 // =====================================
 
 
