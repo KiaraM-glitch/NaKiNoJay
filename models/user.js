@@ -16,22 +16,6 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  // Creates our "wits" table which is where the "tweets" will be held
-  var Wit = sequelize.define("wit", {
-    author: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    body: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
-  });
-
-  Wit.sync();
-
-  module.exports = Wit;
-
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
@@ -44,3 +28,8 @@ module.exports = function(sequelize, DataTypes) {
   });
   return User;
 };
+
+
+
+
+
