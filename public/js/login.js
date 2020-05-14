@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    console.log("test")
     // Referencing from our login.html
     var loginForm = $("form.login")
     var usernameInput = $("input#username-input")
@@ -37,8 +38,7 @@ $(document).ready(function() {
         })
         .then(function() {
             console.log("login.js works ig")
-            // window.location.replace("/index.html");
-            // If there's an error, log the error
+            window.location.replace("/witter");
         })
           .catch(function(err) {
             console.log(err);
