@@ -35,6 +35,7 @@ $(document).ready(function() {
       
             row.append("<p>" + author + " Had a Witty Thought: </p>");
             row.append("<p>" + body + "</p>");
+            row.append("<hr>")
             // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
       
             $("#wits-area").prepend(row);
@@ -61,6 +62,7 @@ $(document).ready(function() {
       
             row.append("<p>" + data[i].author + " Had a Witty Thought: </p>");
             row.append("<p>" + data[i].body + "</p>");
+            row.append("<hr>")
             // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
       
             $("#wits-area").prepend(row);
