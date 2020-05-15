@@ -1,9 +1,9 @@
-{
+module.exports = {
   "development": {
-    "username": "root",
-    "password": "password",
-    "database": "witter_db",
-    "host": "127.0.0.1",
+    "username": process.env.DB_USER,
+    "password": process.env.DB_PW,
+    "database": process.env.DB_NAME,
+    "host": process.env.DB_HOST,
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "password",
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }

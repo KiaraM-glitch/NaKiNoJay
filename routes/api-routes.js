@@ -63,16 +63,5 @@ module.exports = function(app) {
             res.status(401).json(err);
         })
     })
-
-    // app.get("/api/all", function(req, res) {
-
-    //     // Finding all Chirps, and then returning them to the user as JSON.
-    //     // Sequelize queries are asynchronous, which helps with perceived speed.
-    //     // If we want something to be guaranteed to happen after the query, we'll use
-    //     // the .then function
-        
-        
-    
-    // });
 }
 
