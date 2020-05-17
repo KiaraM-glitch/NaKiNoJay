@@ -33,7 +33,7 @@ $(document).ready(function() {
 
             var row = $("<div>");
       
-            row.append("<p>" + author + " Had a Witty Thought: </p>");
+            row.append("<p><b>" + author + "</b> - </p>");
             row.append("<p>" + body + "</p>");
             row.append("<hr>")
             // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
@@ -53,17 +53,19 @@ $(document).ready(function() {
       }
     });
 
+
+
+
     $.get("/api/all_wits").then(function(data) {
+
       if (data.length !== 0) {
 
         for (var i = 0; i < data.length; i++) {
     
-          var row = $("<div>");
+          var row = $("<div class='shadow p-3 mb-5 bg-white rounded'>");
       
-            row.append("<p>" + data[i].author + " Had a Witty Thought: </p>");
+            row.append("<p>@<b>" + data[i].author + "</b> - " + moment(data[i].createdAt).format("h:mma on dddd") + "</p>");
             row.append("<p>" + data[i].body + "</p>");
-            row.append("<hr>")
-            // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
       
             $("#wits-area").prepend(row);
     

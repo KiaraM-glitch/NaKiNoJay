@@ -3,39 +3,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Witter</title>
+  <title>Home | Witter</title>
 
   <!-- DEPENDENCIES: -->
   <link rel="stylesheet" href="css/witter.css">
+  <!-- Moment.js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
   <!-- BOOTSTRAP: -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
 <body>
 
-  <section class="site-intro">
-    <header class="container">
-      <div class="nav-bar row justify-content-center">
-        <div class="col-2">
+  <!-- <nav class="navbar sticky-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sticky top</a>
+  </nav> -->
+
+  <section class="whole-site">
+    <header class="container-fluid || shadow p-3 mb-5 bg-white rounded || sticky-top navbar-light bg-light">
+      <div class="row">
+        
+        <div class="col-3">
+          <p>Currently Logged in as: @<b><span class="member-name"></span></b></span></p>
           <a class="logout" href="/logout">Logout</a>
+        </div>
+
+        <div class="col-6 justify-content-center text-center">
+          <p>Navbar</p>
         </div>
       </div>
     </header>
+
+
+    <article class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-6 text-center">
+          <form class="new-wit">
+            <h2>Make a Wit:</h2>
+            <p>@<b><span class="member-name"></span></b>'s thoughts:</p>
+            <input id="wit-input">
+            <button type="submit">Wit!</button>
+          </form>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-6 wits-container text-center">
+          <div id="wits-area"></div>
+        </div>
+      </div>
+
+    </article>
   </section>
-
-
-  <h1>Welcome @<span class="member-name"></span></h1>
-
-  <form class="new-wit">
-    <h2>Make a Wit:</h2>
-    <p><span class="member-name"></span></p>
-    <input id="wit-input">
-    <button type="submit">Wit!</button>
-  </form>
-
-  <br><br>
-
-  <div id="wits-area"></div>
 
 </body>
 
