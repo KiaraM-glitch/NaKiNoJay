@@ -3,7 +3,7 @@
 ​
 
 ​
-This app will allows users to register and login to an account.  Once logged in, users can create, edit, and delete their wits.
+This app will allows users to register and login to an account. Once logged in, users can create, edit, and delete their wits.
 ​
 # Contributers
 
@@ -24,8 +24,8 @@ HTML, CSS, Node.JS, GitHub, Heroku, MySQL
 
 1. Clone this repo onto your local machine.
 2. Open GitBash and cd directly into the directory.
-3. Once you're inside of the Repository, type "code ."
-4. Right click on the "server.js" and click on "Open in Terminal"
+3. Once you're inside of the Repository, type "code .".
+4. Right click on the "server.js" and click on "Open in Terminal".
 5. Run "NPM Install" in the terminal to download the necessary modules.
 6. Type in "node server.js" into the terminal and hit enter to run the Application.
 ​
