@@ -12,21 +12,29 @@
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <p>Sign up page</p>
+    <nav class="navbar">
+      <a class="navbar-brand">
+        <img src="./assets/wittericons/blackoutlinewriter.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        WITTER
+      </a>
+    </nav>
     <div class="container">
         <div class="row">
           <div class="col">
-            1 of 2
+            <img src="./assets/wittericons/whiteoutlinewriter.png" width="410" height="400">
           </div>
           <div class="col">
             <form class="signup">
-                <input type="username" id="username-input" placeholder="First Name">
-                <input type="username" id="username-input" placeholder="Last Name">
+              <h1> Create a New Account</h1>
+              <p>It's simple as 1, 2, Wit!</p>
+                <input type="username" class="btn btn-light" id="username-input" placeholder="Create Username">
                 <br><br>
-                <input type="password" id="password-input" placeholder="New Password">
+                <input type="password" class="btn btn-light" id="password-input" placeholder="Create Password">
                 <br><br>
-                <button type="submit">Sign Up</button>
-                <p>Or log in <a href="/login.html">here</a></p>
+                <p>By clicking Sign Up, you agree to our Terms Data Policy, and Cookies Policy. You may receive SMS notifications from us and can opt out anytime. </p>
+                <button type="submit" class="btn btn-light">Sign Up</button>
+                <p>Or Login <a href="/login.html">Here</a></p>
+                <br><br>
             </form>
           </div>
         </div>
