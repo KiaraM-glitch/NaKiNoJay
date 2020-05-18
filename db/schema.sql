@@ -1,2 +1,3 @@
 DROP DATABASE IF EXISTS `witter_db`;
 CREATE DATABASE `witter_db`;
+
