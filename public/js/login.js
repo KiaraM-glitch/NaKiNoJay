@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-    console.log("test")
-    // Referencing from our login.html
     var loginForm = $("form.login")
     var usernameInput = $("input#username-input")
     var passwordInput = $("input#password-input")
@@ -18,9 +15,16 @@ $(document).ready(function() {
         // If there is NOT a username OR a password
         if (!userData.username) {
             console.log("There is no Username")
+            $('#username-input').tooltip('show')
+            document.getElementById("username-input").style.backgroundColor = 'darkred';
+            document.getElementById("username-input").style.color = 'white';
+
             return;
         } else if (!userData.password) {
             console.log("There is no Password")
+            $('#password-input').tooltip('show')
+            document.getElementById("password-input").style.backgroundColor = 'darkred';
+            document.getElementById("password-input").style.color = 'white';
             return;
         }
 
@@ -37,7 +41,6 @@ $(document).ready(function() {
             password: password
         })
         .then(function() {
-            console.log("login.js works ig")
             window.location.replace("/witter");
         })
           .catch(function(err) {

@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="css/login.css">
     <!-- BOOTSTRAP: -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- LOGIN ICONS: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTS: -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-image: url('/img/authentication-background-2.png');">
     
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="login-container container">
+        <div class="login-row row justify-content-center">
 
-            <div class="login-page col-6 text-center" style="background-image: url('/img/authentication-background.png');">
-                <h1>Login</h1>
+            <div class="login-col col-12 text-center">
+                <p class="login-text">Login</p>
                 <form class="login">
-                    <p>Username:</p>
-                    <input type="username" id="username-input" placeholder="Username" min="0" max="10">
+                    <i class="fa fa-user icon"></i>
+                    <input type="username" id="username-input" placeholder="Username" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Username">
                     <br><br>
-                    <p>Password:</p>
-                    <input type="password" id="password-input" placeholder="Password">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" id="password-input" placeholder="Password" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Password">
                     <br><br>
-                    <button type="submit">Submit</button>
-                    <p>Don't have an account? <a href="/signup.html">Sign Up!</a></p>
+                    <button class="login-button" type="submit">Submit</button>
+                    <p class="no-account">Don't have an account? <a href="/signup">Sign Up!</a></p>
                 </form>
             </div>
         </div>
