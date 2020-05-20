@@ -39,6 +39,6 @@ HTML, CSS, Node.JS, GitHub, Heroku, mySQL2, Passport, Passport-local, Sequelize,
 ​
 # Application Demo
 ​
-<img src="">
+<img src="./public/assets/wittericons/cover.png">
 ​
 ​
