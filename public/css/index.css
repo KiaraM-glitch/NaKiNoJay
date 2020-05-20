@@ -1,0 +1,19 @@
+body{
+    background-color: #FFDE59;
+    padding: 25px;
+}
+.container {
+    margin-top: 10px;
+}
+
+.navbar{
+    background-color: rgb(252, 252, 252);
+}
+
+.text{
+    font-size: 190%;
+    text-align: initial;
+    align-self: center;
+    position: absolute;
+    padding-left: 60px;
+}
