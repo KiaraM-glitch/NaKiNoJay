@@ -18,7 +18,7 @@ This app will allows users to register and login to an account. Once logged in, 
 ​
 # Technology
 
-HTML, CSS, Node.JS, GitHub, Heroku, MySQL
+HTML, CSS, Node.JS, GitHub, Heroku, mySQL2, Passport, Passport-local, Sequelize, BcryptJS, Moment.js, Express, Expess-session, Dotenv, Bootstrap
 ​
 # Installation Instructions
 
