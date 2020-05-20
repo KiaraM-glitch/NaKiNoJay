@@ -1,14 +1,19 @@
 .container {
     background-color: #FFDE59;
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 80%; 
 }
 nav{
-   margin-left: 230px;
-   margin-right: 230px;
+   width: 100%;
+   margin-bottom: 30px;
 }
 .navbar{
     background-color: rgba(246, 248, 250, 0.89);
+    padding-left: auto;  
 }
 body{
-    background-color:#ABC7CA
+    background-color:#ABC7CA;
+    padding: 3%;
+    width:100%
 }
+
