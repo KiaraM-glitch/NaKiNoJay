@@ -33,9 +33,8 @@ $(document).ready(function() {
             username: username,
             password: password
         })
-            .then(function(data) {
+            .then(function() {
                 window.location.replace("/login")
-                console.log("done")
             })
         .catch(handleLoginErr);
     }
