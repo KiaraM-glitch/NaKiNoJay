@@ -1,3 +1,115 @@
 body {
-    background-color: #FFDE59;
+    font-family: 'Balsamiq Sans', cursive !important;
+    background-repeat: no-repeat;
+}
+
+.signup-container {
+    margin-top: calc(100px + 3vmax);
+}
+
+.signup-row {
+    /* GIVES IT SOME BREATHING ROOM ON SMALL SCREENS: */
+    padding: 10px;
+}
+
+.signup-col {
+    border-radius: 10px;
+}
+
+.signup-text {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0px 4px 6px black;
+}
+
+/* INPUT TAG ICON */
+.icon {
+    background-image: linear-gradient(to right, rgb(0, 246, 234), rgb(255, 255, 255)) !important;
+    padding: 10px 40px 15px 13px;
+    margin: 0px -40px 0px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px black;
+    border: 1px solid black;
+}
+
+/* USERNAME AND PASSWORD INPUTS CSS */
+input[type=password], input[type=username] {
+    width: calc(200px + 9vmax);
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    border-radius: 20px;
+    transition: 0.2s all ease-in-out;
+    text-align: center;
+}
+
+/* HOVER USERNAME AND PASSWORD INPUTS */
+input[type=password]:hover, input[type=username]:hover {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 4px 10px black;
+}
+
+/* FOCUS USERNAME AND PASSWORD INPUTS */
+input[type=password]:focus, input[type=username]:focus {
+    outline: none;
+}
+
+/* ========================================================================= */
+/* THE BUTTON DESIGN */
+    .signup-button {
+        background-image: linear-gradient(to right, rgb(224, 117, 228), rgb(211, 143, 117));
+        border: 1px solid black;
+        box-shadow: 0px 2px 2px black;
+        border-radius: 20px;
+        font-size: 25px;
+        padding: 10px 40px;
+        transition: all 0.2s ease-in-out;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+        color: white;
+        z-index: 1;
+        position: relative;
+    }
+
+    /* USED IN ORDER TO CREATE THE GRADIENT TRANSITION EFFECT */
+    .signup-button::before {
+        border: 1px solid black;
+        border-radius: 20px;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(
+        to bottom,
+        rgb(179, 89, 182),
+        rgb(37, 159, 207)
+        );
+        z-index: -1;
+        transition: opacity 0.2s linear;
+        opacity: 0;
+    }
+
+    /* USES THE HOVER AND BEFORE FUNCTION ABOVE TO CREATE THE GRADIENT TRANSITION */
+    .signup-button:hover::before {
+        box-shadow: 0px 0px 8px white;
+        opacity: 1;
+    }
+
+    .signup-button:focus {
+        outline: none;
+    }
+
+/* BUTTON DESIGN END */
+/* ========================================================================= */
+
+
+.has-account {
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    margin-top: calc(10px + 1vmax);
+    color: white;
+    font-size: calc(13px + 0.7vmax)
 }

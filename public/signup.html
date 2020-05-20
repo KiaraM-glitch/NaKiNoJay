@@ -2,27 +2,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Sign Up | Witter</title>
 
     <!-- DEPENDENCIES: -->
     <link rel="stylesheet" href="css/signup.css">
     <!-- BOOTSTRAP: -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- LOGIN ICONS: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTS: -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <p>Sign up page</p>
-    <form class="signup">
-        <p>Username:</p>
-        <input type="username" id="username-input" placeholder="Username">
-        <p>Password:</p>
-        <input type="password" id="password-input" placeholder="Password">
-        <input type="checkbox" onclick="showPassword()">Show Password
-        <br><br>
-        <button type="submit">Submit</button>
-        <p>Or log in <a href="/login">here</a></p>
-    </form>
+<body style="background-image: url('/img/authentication-background-2.png');">
+    
+    <div class="signup-container container">
+        <div class="signup-row row justify-content-center">
+
+            <div class="signup-col col-12 text-center">
+                <p class="signup-text">Signup</p>
+                <form class="signup">
+                    <i class="fa fa-user icon"></i>
+                    <input type="username" id="username-input" placeholder="Username" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Username">
+                    <br><br>
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" id="password-input" placeholder="Password" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Password">
+                    <br><br>
+                    <button class="signup-button" type="submit">Submit</button>
+                    <p class="has-account">Already have an Account? <a href="/login">Login!</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 <!-- BOOTSTRAP SCRIPT -->
@@ -32,16 +45,5 @@
 
 <!-- REFERENCING OUR SCRIPT: -->
 <script src="./js/signup.js"></script>
-
-<script>
-    function showPassword() {
-        var passwordInput = document.getElementById("password-input")
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-        } else {
-            passwordInput.type = "password";
-        }
-    }
-</script>
 
 </html>
