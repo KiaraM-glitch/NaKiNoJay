@@ -55,7 +55,7 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
  
 ## 👨‍💼 Credits <a name='credits'></a>: 
  
-<img src="https://avatars1.githubusercontent.com/u/60331626?s=400&u=46cffda8c75e6d33d7c837d0398ada93844e637f&v=4" width="70" style="max-width:100%; border-radius: 20px"></img><br>
+<img src="https://avatars1.githubusercontent.com/u/60331626?s=400&u=46cffda8c75e6d33d7c837d0398ada93844e637f&v=4" width="70" style="border: 1px solid black"></img><br>
 <a href="https://github.com/KiaraM-glitch"><b>@KiaraM-glitch</b></a>
 <ul>
     <li><b>ROLE:</b> Project Leader</li>
@@ -63,7 +63,7 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 </ul>
 <br>
 
-<img src="https://avatars2.githubusercontent.com/u/60205840?s=400&u=6b34b4599c5b54a0157794d564a7d663ba85bed6&v=4" width="70" style="max-width:100%; border-radius: 20px"></img><br>
+<img src="https://avatars2.githubusercontent.com/u/60205840?s=400&u=6b34b4599c5b54a0157794d564a7d663ba85bed6&v=4" width="70" style="border: 1px solid black"></img><br>
 <a href="https://github.com/nmonsivais"><b>@nmonsivais</b></a>
 <ul>
     <li><b>ROLE:</b> Frontend Developer</li>
@@ -71,7 +71,7 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 </ul>
 <br>
 
-<img src="https://avatars1.githubusercontent.com/u/58704859?s=400&u=6adacae3bbfcc4293a859a3550492beb678318a9&v=4" width="70" style="max-width:100%; border-radius: 20px"></img><br>
+<img src="https://avatars1.githubusercontent.com/u/58704859?s=400&u=6adacae3bbfcc4293a859a3550492beb678318a9&v=4" width="70" style="border: 1px solid black"></img><br>
 <a href="https://github.com/NKLouis"><b>@NKLouis</b></a>
 <ul>
     <li><b>ROLE:</b> Frontend Developer</li>
@@ -79,7 +79,7 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 </ul>
 <br>
 
-<img src="https://avatars0.githubusercontent.com/u/58493507?v=4" width="70" style="max-width:100%; border-radius: 20px"></img><br>
+<img src="https://avatars3.githubusercontent.com/u/58493507?s=460&u=263ac14280eff2f063c0507859985bb7750aaa00&v=4" width="70" style="border: 2px solid black"></img><br>
 <a href="https://github.com/JayPTucker"><b>@JayPTucker</b></a>
 <ul>
     <li><b>ROLE:</b> Backend/Frontend Developer</li>
