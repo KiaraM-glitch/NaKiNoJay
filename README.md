@@ -86,10 +86,10 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
     <li>CSS, JS, jQuery, HTML, MySQL, Sequelize, Express</li>
 </ul>
 <br>
-
-<style> 
-
-</style>
  
 ## 📷 Screenshots: <a name='screenshots'></a>
 ![Example](/public/img/example.png)
+
+![Example2](/public/img/example2.png)
+
+![Example3](/public/img/example3.png)
