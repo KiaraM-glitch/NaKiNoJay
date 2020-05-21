@@ -33,10 +33,11 @@ $(document).ready(function() {
         })
           .then(function() {
 
-            var row = $("<div class='shadow p-3 mb-5 bg-white rounded'>");
-      
-            row.append("<p>@<b>" + author + "</b> - " + moment(createdAt).format("h:mma on dddd") + "</p>");
-            row.append("<p>" + body + "</p>");
+            var row = $(`<div class="wit row">`);
+            row.append(`<div class="col-6"><p class="wit-author">@${author}</div>`);
+            row.append(`<div class="col-6"><p class="wit-date">${moment(createdAt).format("h:mma on dddd")} </p></div>`)
+            row.append(`</div>`)
+            row.append(`<p>${body}</p>`);
 
             $("#wits-area").prepend(row);
         
@@ -62,13 +63,13 @@ $(document).ready(function() {
 
         for (var i = 0; i < data.length; i++) {
 
-          var row = $(`<div class="shadow p-3 mb-5 bg-white rounded">`);
-      
-            row.append("<p>@<b>" + data[i].author + "</b> - " + moment(data[i].createdAt).format("h:mma on dddd") + "</p>");
-            row.append("<p>" + data[i].body + "</p>");
+          var row = $(`<div class="wit row">`);
+            row.append(`<div class="col-6"><p class="wit-author">@${data[i].author}</div>`);
+            row.append(`<div class="col-6"><p class="wit-date">${moment(data[i].createdAt).format("h:mma on dddd")} </p></div>`)
+            row.append(`</div>`)
+            row.append(`<p>${data[i].body}</p>`);
 
             $("#wits-area").prepend(row);
-
         }
       }
     })

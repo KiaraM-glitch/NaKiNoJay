@@ -7,51 +7,45 @@
 
   <!-- DEPENDENCIES: -->
   <link rel="stylesheet" href="css/witter.css">
+  <link rel="shortcut icon" href="img/favicon.png">
   <!-- Moment.js -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
   <!-- BOOTSTRAP: -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-image: linear-gradient(to right, rgb(58, 160, 228), rgb(218, 64, 218));
+">
 
-  <!-- <nav class="navbar sticky-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Sticky top</a>
-  </nav> -->
-
-  <section class="whole-site">
-    <header class="container-fluid || shadow p-3 mb-5 bg-white rounded || sticky-top navbar-light bg-light">
+  <section class="whole-site" style="background-image: url('/img/blackoutlinewriter.png');">
+    <header class="container-fluid sticky-top">
       <div class="row">
         
-        <div class="col-3">
-          <p>Currently Logged in as: @<b><span class="member-name"></span></b></span></p>
-          <a class="logout" href="/logout">Logout</a>
+        <div class="col-3 text-center">
+          <p class="logout-text">Logged in as: @<span class="member-name"></span></p>
+            <button class="logout-button" onclick="window.location.href='/logout'">Logout</button>
         </div>
 
-        <div class="col-6 justify-content-center text-center">
-          <p>Navbar</p>
-        </div>
       </div>
     </header>
 
 
-    <article class="container">
-      <div class="row justify-content-center">
+    <article class="mainpage-container container">
 
-        <div class="col-6 text-center">
+      <div class="new-wit-row row justify-content-center">
+        <div class="col-12 text-center">
           <form class="new-wit">
-            <h2>Make a Wit:</h2>
-            <p>@<b><span class="member-name"></span></b>'s thoughts:</p>
-            <input id="wit-input">
-            <button type="submit">Wit!</button>
+            <p class="make-wit-text">Make a Wit!</p>
+            <p class="wit-input-text">@<span class="member-name"></span>'s thoughts:</p>
+            <input class="wit-input" id="wit-input" placeholder="Feeling Witty?">
+            <button class="wit-button" type="submit">Wit!</button>
           </form>
-          <hr>
+          <br><br>
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-6 wits-container text-center">
-          <div id="wits-area"></div>
+      <div class="wits-row row justify-content-center">
+        <div class="col-11 wits-container text-center justify-content-center" id="wits-area">
         </div>
       </div>
 

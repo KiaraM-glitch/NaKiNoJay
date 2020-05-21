@@ -5,16 +5,28 @@
     <title>Welcome | Witter</title>
 
     <!-- DEPENDENCIES: -->
-
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.png">
     <!-- BOOTSTRAP: -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FONTS: -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
 
 </head>
-<body>
+<body style="background-image: url('/img/authentication-background-2.png');">
+    
+    <div class="welcome-container container">
+        <div class="welcome-row row justify-content-center">
 
-    <h1>Welcome to Witter</h1>
-    <button id="login" onclick="window.location.href='login'">Login</button>
-    <button id="signup" onclick="window.location.href='signup'">Sign up</button>
+            <div class="welcome-col col-12 text-center">
+                <p class="welcome-text">Welcome to Witter</p class="welcome-text">
+                <p>Make your Wits come to </p>
+                <button class="login-button" id="login" onclick="window.location.href='login'">Login</button>
+                <button class="signup-button" id="signup" onclick="window.location.href='signup'">Sign up</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
