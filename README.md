@@ -56,35 +56,39 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 ## 👨‍💼 Credits <a name='credits'></a>: 
  
 <img src="https://avatars1.githubusercontent.com/u/60331626?s=400&u=46cffda8c75e6d33d7c837d0398ada93844e637f&v=4" width="70"></img>
-<p><b>[Kiara Mahan](https://github.com/KiaraM-glitch)</p></b>
+<a href="https://github.com/KiaraM-glitch"><b>@KiaraM-glitch</b></a>
 <ul>
-    <li>ROLE: Project Leader</li>
+    <li><b>ROLE:</b> Project Leader</li>
     <li>CSS, HTML, Project Management and Presentation</li>
 </ul>
-<br><br>
+<br>
 
 <img src="https://avatars2.githubusercontent.com/u/60205840?s=400&u=6b34b4599c5b54a0157794d564a7d663ba85bed6&v=4" width="70"/>
+<a href="https://github.com/nmonsivais"><b>@nmonsivais</b></a>
 <p><b>[Noe (Tro) Monsivais](https://github.com/nmonsivais)</p></b>
 <ul>
-    <li>ROLE: Frontend Developer</li>
+    <li><b>ROLE:</b> Frontend Developer</li>
     <li>App Concepts, CSS, HTML</li>
 </ul>
-<br><br>
+<br>
 
 <img src="https://avatars1.githubusercontent.com/u/58704859?s=400&u=6adacae3bbfcc4293a859a3550492beb678318a9&v=4" width="70"/>
+<a href="https://github.com/NKLouis"><b>@NKLouis</b></a>
 <p><b>[Naritchaya Louis](https://github.com/NKLouis)</p></b>
 <ul>
-    <li>ROLE: Frontend Developer</li>
+    <li><b>ROLE:</b> Frontend Developer</li>
     <li>HTML, CSS</li>
 </ul>
-<br><br>
+<br>
 
 <img src="https://avatars0.githubusercontent.com/u/58493507?v=4" width="70"/>
+<a href="https://github.com/JayPTucker"><b>@JayPTucker</b></a>
 <p><b>[Jay Paul Tucker](https://github.com/JayPTucker)</p></b>
 <ul>
-    <li>ROLE: Backend/Frontend Developer</li>
+    <li><b>ROLE:</b> Backend/Frontend Developer</li>
     <li>CSS, JS, jQuery, HTML, MySQL, Sequelize, Express</li>
 </ul>
+<br>
  
 ## 📷 Screenshots: <a name='screenshots'></a>
 ![Example](/public/img/example.png)
