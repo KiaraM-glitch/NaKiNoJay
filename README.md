@@ -93,3 +93,6 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 ![Example2](/public/img/example2.png)
 
 ![Example3](/public/img/example3.png)
+
+## License:
+https://creativecommons.org/licenses/
