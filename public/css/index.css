@@ -17,10 +17,15 @@ body {
 .welcome-text {
     margin-bottom: 30px;
     color: white;
-    font-size: 90px;
+    font-size: calc(6px + 4vmax);
     text-shadow: 0px 4px 6px black;
 }
 
+.welcome-bio {
+    color: white;
+    font-size: calc(1px + 2vmax);
+    text-shadow: 0px 4px 6px black;
+}
 
 
 /* ========================================================================= */
@@ -71,3 +76,7 @@ body {
 
 /* BUTTON DESIGN END */
 /* ========================================================================= */
+
+.footer {
+    color: white;
+}

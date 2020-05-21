@@ -113,3 +113,7 @@ input[type=password]:focus, input[type=username]:focus {
     color: white;
     font-size: calc(13px + 0.7vmax)
 }
+
+.footer {
+    color: white;
+}
