@@ -58,19 +58,23 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 <img src="https://avatars1.githubusercontent.com/u/60331626?s=400&u=46cffda8c75e6d33d7c837d0398ada93844e637f&v=4" width="70"/>
 - [Kiara Mahan](https://github.com/KiaraM-glitch)
     - ROLE: Project Leader
+    - CSS, HTML, Project Management and Presentation
 
 <img src="https://avatars2.githubusercontent.com/u/60205840?s=400&u=6b34b4599c5b54a0157794d564a7d663ba85bed6&v=4" width="70"/>
 - [Noe (Tro) Monsivais](https://github.com/nmonsivais)
     - ROLE: Frontend Developer
+    - App Concepts, CSS, HTML
 
 <img src="https://avatars1.githubusercontent.com/u/58704859?s=400&u=6adacae3bbfcc4293a859a3550492beb678318a9&v=4" width="70"/>
 - [Naritchaya Louis](https://github.com/NKLouis)
     - ROLE: Frontend Developer
+    - HTML, CSS
 
 <img src="https://avatars0.githubusercontent.com/u/58493507?v=4" width="70"/>
 - [Jay Paul Tucker](https://github.com/JayPTucker)
     - ROLE: Backend/Frontend Developer
+    - CSS, JS, jQuery, HTML, MySQL, Sequelize, Express
 
  
 ## 📷 Screenshots: <a name='screenshots'></a>
-![Example](burgers-example.png)
+![Example](/public/img/example.png)
