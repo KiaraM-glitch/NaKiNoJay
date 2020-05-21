@@ -2,44 +2,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Sign Up | Witter</title>
 
     <!-- DEPENDENCIES: -->
-
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="shortcut icon" href="img/favicon.png">
     <!-- BOOTSTRAP: -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/signup.css">
-</head>
-<body>
-    <nav class="navbar">
-      <a class="navbar-brand">
-        <img src="./assets/wittericons/blackoutlinewriter.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        WITTER
-      </a>
-    </nav>
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <img src="./assets/wittericons/whiteoutlinewriter.png" width="410" height="400">
-          </div>
-          <div class="col">
-            <form class="signup">
-              <h1> Create a New Account</h1>
-              <p>It's simple as 1, 2, Wit!</p>
-                <input type="username" class="btn btn-light" id="username-input" placeholder="Create Username">
-                <br><br>
-                <input type="password" class="btn btn-light" id="password-input" placeholder="Create Password">
-                <br><br>
-                <p>By clicking Sign Up, you agree to our Terms Data Policy, and Cookies Policy. You may receive SMS notifications from us and can opt out anytime. </p>
-                <button type="submit" class="btn btn-light">Sign Up</button>
-                <p>Or Login <a href="/login.html">Here</a></p>
-                <br><br>
-            </form>
-          </div>
-        </div>
-    
+    <!-- LOGIN ICONS: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTS: -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
+</head>
+<body style="background-image: url('/img/authentication-background-2.png');">
+    
+    <div class="signup-container container">
+        <div class="signup-row row justify-content-center">
+
+            <div class="signup-col col-12 text-center">
+                <p class="signup-text">Signup</p>
+                <form class="signup">
+                    <i class="fa fa-user icon"></i>
+                    <input type="username" autocomplete="off" id="username-input" placeholder="Username" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Username">
+                    <br><br>
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" autocomplete="off" id="password-input" placeholder="Password" data-toggle="tooltip" data-placement="top" title="Please Enter in a Valid Password">
+                    <br><br>
+                    <button class="signup-button" type="submit">Submit</button>
+                    <p class="has-account">Already have an Account? <a href="/login">Login!</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREDITS START -->
+
+    <div class="page-container container-fluid">
+        <div class="content-wrap row">
+            <div class="footer col-md-12 text-center">
+                <p id="credits">NaKiNoJay || Witter <br>© since 2020</p>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 <!-- BOOTSTRAP SCRIPT -->

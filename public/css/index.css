@@ -1,19 +1,82 @@
-body{
-    background-color: #FFDE59;
-    padding: 25px;
-}
-.container {
-    margin-top: 10px;
+body {
+    font-family: 'Balsamiq Sans', cursive !important;
+    background-repeat: no-repeat;
 }
 
-.navbar{
-    background-color: rgb(252, 252, 252);
+/* USED IN ORDER TO HELP RESIZE THE SCREEN FOR PHONES */
+.welcome-container {
+    margin-top: calc(100px + 3vmax);
 }
 
-.text{
-    font-size: 190%;
-    text-align: initial;
-    align-self: center;
+.welcome-row {
+    /* GIVES IT SOME BREATHING ROOM ON SMALL SCREENS: */
+    padding: 10px;
+}
+
+/* THE WELCOME TEXT */
+.welcome-text {
+    margin-bottom: 30px;
+    color: white;
+    font-size: calc(6px + 4vmax);
+    text-shadow: 0px 4px 6px black;
+}
+
+.welcome-bio {
+    color: white;
+    font-size: calc(1px + 2vmax);
+    text-shadow: 0px 4px 6px black;
+}
+
+
+/* ========================================================================= */
+/* THE BUTTON DESIGN */
+.login-button, .signup-button {
+    background-image: linear-gradient(to right, rgb(224, 117, 228), rgb(211, 143, 117));
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px 40px;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* USED IN ORDER TO CREATE THE GRADIENT TRANSITION EFFECT */
+.login-button::before, .signup-button::before {
+    border: 1px solid black;
+    border-radius: 20px;
     position: absolute;
-    padding-left: 60px;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+    to bottom,
+    rgb(179, 89, 182),
+    rgb(37, 159, 207)
+    );
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+/* USES THE HOVER AND BEFORE FUNCTION ABOVE TO CREATE THE GRADIENT TRANSITION */
+.login-button:hover::before, .signup-button:hover::before {
+    box-shadow: 0px 0px 8px white;
+    opacity: 1;
+}
+
+.login-button:focus, .signup-button:focus {
+    outline: none;
+}
+
+/* BUTTON DESIGN END */
+/* ========================================================================= */
+
+.footer {
+    color: white;
 }

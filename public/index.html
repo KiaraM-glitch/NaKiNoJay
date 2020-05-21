@@ -1,44 +1,49 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | Witter</title>
 
     <!-- DEPENDENCIES: -->
-
-    <!-- BOOTSTRAP: -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- BOOTSTRAP: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FONTS: -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
 
 </head>
+<body style="background-image: url('/img/authentication-background-2.png');">
+    
+    <div class="welcome-container container">
+        <div class="welcome-row row justify-content-center">
 
-<body>
-    <nav class="navbar">
-        <a class="navbar-brand">
-            <img src="./assets/wittericons/blackoutlinewriter.png" width="50" height="50"
-                class="d-inline-block align-center" alt="witter logo">
-            <a class="text">Welcome to Witter</a>
-        </a>
-    </nav>
+            <div class="welcome-col col-12 text-center">
+                <p class="welcome-text">Welcome to Witter</p class="welcome-text">
+                <p class="welcome-bio">Make your Wits come to life!</p>
+                <button class="login-button" id="login" onclick="window.location.href='login'">Login</button>
+                <button class="signup-button" id="signup" onclick="window.location.href='signup'">Sign up</button>
+            </div>
+        </div>
+    </div>
 
-    <h1></h1>
-    <button id="login" onclick="window.location.href='login'">Login</button>
-    <button id="signup" onclick="window.location.href='signup'">Sign up</button>
-    <a class="nav-link active" href="termsandconditions.html">Terms and Conditions</a>
+    <!-- CREDITS START -->
+
+    <div class="page-container container-fluid">
+        <div class="content-wrap row">
+            <div class="footer col-md-12 text-center">
+                <p id="credits">NaKiNoJay || Witter <br>© since 2020</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
 <!-- BOOTSTRAP SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <sript src="./js/index.js"></sript>
-
 </html>

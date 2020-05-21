@@ -17,7 +17,6 @@ module.exports = function(app) {
         })
         .then(function() {
             res.redirect("/login")
-            console.log("Account Created")
         })
         .catch(function(err) {
             res.status(401).json(err);
@@ -56,7 +55,6 @@ module.exports = function(app) {
         })
         .then(function(results) {
             // res.redirect(307, "/api/login")
-            console.log("Wit made api routes")
             res.end()
         })
         .catch(function(err) {

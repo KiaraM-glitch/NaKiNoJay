@@ -1,4 +1,150 @@
 body {
-    background-color: #FFDE59;
-    padding: 25px;
+    font-family: 'Balsamiq Sans', cursive !important;
+    background-repeat: no-repeat;
+}
+
+div {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.logout-text {
+    font-size: 20px;
+}
+
+.whole-site {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.member-name {
+    font-weight: bolder;
+}
+
+/* ========================================================================= */
+/* THE BUTTON DESIGN */
+.logout-button {
+    background-image: linear-gradient(to right, rgb(58, 160, 228), rgb(218, 64, 218));
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* USED IN ORDER TO CREATE THE GRADIENT TRANSITION EFFECT */
+.logout-button::before {
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+    to bottom,
+    rgb(179, 89, 182),
+    rgb(37, 159, 207)
+    );
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+/* USES THE HOVER AND BEFORE FUNCTION ABOVE TO CREATE THE GRADIENT TRANSITION */
+.logout-button:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px white;
+    opacity: 1;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.make-wit-text {
+    margin-bottom: 30px;
+    color: white;
+    font-size: calc(30px + 5vmin);
+    text-shadow: 0px 4px 6px black;
+}
+
+.wit-input-text {
+    font-size: 27px;
+}
+
+.wit-input {
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px black;
+    transition: all 0.4s ease-in-out;
+    margin-right: 10px;
+}
+
+.wit-input:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 3px 8px black;
+}
+
+.wit-input:focus {
+    outline: none;
+}
+
+.wit-button {
+    background-image: linear-gradient(to right, rgb(58, 160, 228), rgb(218, 64, 218));
+    color: white;
+    padding: 14px 7px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px black;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    border: 1px solid black;
+    transition: all 0.4s ease-in-out;
+}
+
+.wit-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 3px 5px black;
+}
+
+.wit-button:active {
+    outline: none;
+}
+
+.wit {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px calc(-30px + 8vmax) !important;
+    box-shadow: 0px 5px 10px black;
+    padding: 15px !important;
+    transition: all 0.4s ease-in-out
+}
+
+.wit:hover {
+    transform: scale(1.1);
+    background-color: rgb(223, 223, 223);
+    box-shadow: 0px 7px 13px black;
+}
+
+.wit-author {
+    font-size: 21px;
+    float: left;
+    font-weight: bolder;
+}
+
+.wit-date {
+    font-size: 15px;
+    color: gray;
+    float: right;
+}
+
+.footer {
+    color: white;
 }

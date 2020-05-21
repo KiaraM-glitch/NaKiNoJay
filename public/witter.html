@@ -3,39 +3,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Witter</title>
+  <title>Home | Witter</title>
 
   <!-- DEPENDENCIES: -->
-
+  <link rel="stylesheet" href="css/witter.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Moment.js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
   <!-- BOOTSTRAP: -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/witter.css">
-</head>
-<body>
 
-  <section class="site-intro">
-    <header class="container">
-      <div class="nav-bar row justify-content-center">
-        <div class="col-2">
-          <a class="logout" href="/logout">Logout</a>
+</head>
+<body style="background-image: linear-gradient(to right, rgb(255, 149, 100), rgb(255, 148, 255));
+">
+
+  <section class="whole-site" style="background-image: url('/img/blackoutlinewriter.png');">
+    <header class="container-fluid sticky-top">
+      <div class="row">
+        
+        <div class="col-3 text-center">
+          <p class="logout-text">Logged in as: @<span class="member-name"></span></p>
+            <button class="logout-button" onclick="window.location.href='/logout'">Logout</button>
         </div>
       </div>
     </header>
+
+
+    <article class="mainpage-container container">
+
+      <div class="new-wit-row row justify-content-center">
+        <div class="col-12 text-center">
+          <form class="new-wit">
+            <p class="make-wit-text">Make a Wit!</p>
+            <p class="wit-input-text">@<span class="member-name"></span>'s thoughts:</p>
+            <input class="wit-input" id="wit-input" placeholder="Feeling Witty?" autocomplete="off">
+            <button class="wit-button" type="submit">Wit!</button>
+          </form>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="wits-row row justify-content-center">
+        <div class="col-11 wits-container text-center justify-content-center" id="wits-area">
+        </div>
+      </div>
+
+    </article>
   </section>
 
+  <!-- CREDITS START -->
 
-  <h1>Welcome @<span class="member-name"></span></h1>
-
-  <form class="new-wit">
-    <h2>Make a Wit:</h2>
-    <p><span class="member-name"></span></p>
-    <input id="wit-input">
-    <button type="submit">Wit!</button>
-  </form>
-
-  <br><br>
-
-  <div id="wits-area"></div>
+  <div class="page-container container-fluid">
+    <div class="content-wrap row">
+        <div class="footer col-md-12 text-center">
+            <p id="credits">NaKiNoJay || Witter <br>© since 2020</p>
+        </div>
+    </div>
+  </div>
 
 </body>
 

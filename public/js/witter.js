@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // This file just does a GET request to figure out which user is logged in
     // and updates the HTML on the page
+
     $.get("/api/user_data").then(function(data) {
       $(".member-name").text(data.username);
 
@@ -24,20 +25,20 @@ $(document).ready(function() {
         bodyInput.val("");
       })
 
-      function createWitFunction(author, body) {
+      function createWitFunction(author, body, createdAt) {
         $.post("/api/witter", {
           author: author,
-          body: body
+          body: body,
+          createdAt: createdAt
         })
           .then(function() {
 
-            var row = $("<div>");
-      
-            row.append("<p>" + author + " Had a Witty Thought: </p>");
-            row.append("<p>" + body + "</p>");
-            row.append("<hr>")
-            // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
-      
+            var row = $(`<div class="wit row">`);
+            row.append(`<div class="col-6"><p class="wit-author">@${author}</div>`);
+            row.append(`<div class="col-6"><p class="wit-date">${moment(createdAt).format("h:mma on dddd")} </p></div>`)
+            row.append(`</div>`)
+            row.append(`<p>${body}</p>`);
+
             $("#wits-area").prepend(row);
         
           })
@@ -53,23 +54,24 @@ $(document).ready(function() {
       }
     });
 
+
+
+
     $.get("/api/all_wits").then(function(data) {
+
       if (data.length !== 0) {
 
         for (var i = 0; i < data.length; i++) {
-    
-          var row = $("<div>");
-      
-            row.append("<p>" + data[i].author + " Had a Witty Thought: </p>");
-            row.append("<p>" + data[i].body + "</p>");
-            row.append("<hr>")
-            // row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
-      
+
+          var row = $(`<div class="wit row">`);
+            row.append(`<div class="col-6"><p class="wit-author">@${data[i].author}</div>`);
+            row.append(`<div class="col-6"><p class="wit-date">${moment(data[i].createdAt).format("h:mma on dddd")} </p></div>`)
+            row.append(`</div>`)
+            row.append(`<p>${data[i].body}</p>`);
+
             $("#wits-area").prepend(row);
-    
         }
       }
     })
-
   });
   
