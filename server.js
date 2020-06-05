@@ -2,6 +2,7 @@
 require("dotenv").config();
 
 var express = require("express");
+var compression = require('compression')
 var session = require("express-session");
 var passport = require("./config/passport");
 // =====================================
@@ -11,6 +12,8 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 var app = express();
 // =====================================
+
+app.use(compression());
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }))
