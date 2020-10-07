@@ -58,8 +58,8 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 <img src="https://avatars1.githubusercontent.com/u/60331626?s=400&u=46cffda8c75e6d33d7c837d0398ada93844e637f&v=4" width="70" style="border: 1px solid black"></img><br>
 <a href="https://github.com/KiaraM-glitch"><b>@KiaraM-glitch</b></a>
 <ul>
-    <li><b>ROLE:</b> Project Leader/Frontend Developer</li>
-    <li>CSS, HTML, Project Management and Presentation</li>
+    <li><b>ROLE:</b> Project Leader/Frontend/Backend Developer</li>
+    <li>CSS, HTML, jQuery, MySQL Project Management and Presentation</li>
 </ul>
 <br>
 
