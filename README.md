@@ -59,7 +59,7 @@ Once you go to the Website you'll be Welcomed by our Intro Screen where you have
 <a href="https://github.com/KiaraM-glitch"><b>@KiaraM-glitch</b></a>
 <ul>
     <li><b>ROLE:</b> Project Leader/Frontend/Backend Developer</li>
-    <li>CSS, HTML, jQuery, MySQL Project Management and Presentation</li>
+    <li>CSS, HTML, jQuery, MySQL, Project Management and Presentation</li>
 </ul>
 <br>
 
