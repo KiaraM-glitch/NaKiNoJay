@@ -8,7 +8,7 @@ var passport = require("./config/passport");
 // =====================================
 
 // Sets up the Express app
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3306;
 var db = require("./models");
 var app = express();
 // =====================================
